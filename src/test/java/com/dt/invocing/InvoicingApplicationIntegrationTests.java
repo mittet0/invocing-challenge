@@ -23,7 +23,7 @@ import com.dt.invocing.model.CurrencyType;
 import com.fasterxml.jackson.databind.JsonNode;
 
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
-public class InvoicingApplicationIT extends BaseTest {
+public class InvoicingApplicationIntegrationTests extends BaseTest {
 
     private static final String DOCUMENT = "document";
 
