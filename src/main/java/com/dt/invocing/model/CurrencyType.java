@@ -5,5 +5,5 @@ package com.dt.invocing.model;
  *
  */
 public enum CurrencyType {
-	EUR, USD, GBR
+    EUR, USD, GBP
 }

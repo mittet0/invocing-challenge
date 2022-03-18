@@ -1,0 +1,19 @@
+This file is not csv
+[Customer [vat=123456789, name=Vendor 1, 
+documents=[
+Document [number=1000000257, amount=400.00, currency=USD, parentNumber=0],
+Document [number=1000000260, amount=100.00, currency=EUR, parentNumber=1000000257], 
+Document [number=1000000261, amount=50.00, currency=GBP, parentNumber=1000000257],
+Document [number=1000000264, amount=1600.00, currency=EUR, parentNumber=0]]], 
+
+Customer [vat=987654321, name=Vendor 2, 
+documents=[
+Document [number=1000000258, amount=900.00, currency=EUR, parentNumber=0],
+Document [number=1000000262, amount=200.00, currency=USD, parentNumber=1000000258]]], 
+
+Customer [vat=123465123, name=Vendor 3, 
+documents=[
+Document [number=1000000259, amount=1300.00, currency=GBP, parentNumber=0],
+Document [number=1000000263, amount=100.00, currency=EUR, parentNumber=1000000259]]]]> but was: <[
+
+Customer [vat=123465123, name=Vendor 3, documents=[Document [number=1000000259, amount=1300.00, currency=GBP, parentNumber=0], Document [number=1000000263, amount=100.00, currency=EUR, parentNumber=1000000259]]], Customer [vat=123456789, name=Vendor 1, documents=[Document [number=1000000257, amount=400.00, currency=USD, parentNumber=0], Document [number=1000000260, amount=100.00, currency=EUR, parentNumber=1000000257], Document [number=1000000261, amount=50.00, currency=GBP, parentNumber=1000000257], Document [number=1000000264, amount=1600.00, currency=EUR, parentNumber=0]]], Customer [vat=987654321, name=Vendor 2, documents=[Document [number=1000000258, amount=900.00, currency=EUR, parentNumber=0], Document [number=1000000262, amount=200.00, currency=USD, parentNumber=1000000258]]]]>

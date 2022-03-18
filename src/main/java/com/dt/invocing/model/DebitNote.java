@@ -1,5 +1,5 @@
 /**
- * 
+ *
  */
 package com.dt.invocing.model;
 
@@ -12,17 +12,19 @@ import java.math.RoundingMode;
  */
 public class DebitNote extends Document {
 
-	public DebitNote(long number, double amount, CurrencyType currency) {
-		super();
-		this.amount = BigDecimal.valueOf(amount).setScale(2,
-				RoundingMode.HALF_UP);
-		this.number = number;
-		this.currency = currency;
-	}
+    public DebitNote(long number, double amount, CurrencyType currency,
+            long parentNumber) {
+        super();
+        this.amount = BigDecimal.valueOf(amount).setScale(2,
+                RoundingMode.HALF_UP);
+        this.number = number;
+        this.currency = currency;
+        this.parentNumber = parentNumber;
+    }
 
-	@Override
-	public BigDecimal calculateAmount() {
-		return amount;
-	}
+    @Override
+    public BigDecimal calculateAmount() {
+        return amount;
+    }
 
 }

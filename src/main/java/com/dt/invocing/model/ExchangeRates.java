@@ -4,6 +4,6 @@ import java.util.Map;
 
 public interface ExchangeRates {
 
-	public Map<CurrencyType, Double> getCurrencyRates();
+    public Map<CurrencyType, Double> getCurrencyRates();
 
 }

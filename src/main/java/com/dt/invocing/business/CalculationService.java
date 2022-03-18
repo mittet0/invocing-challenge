@@ -1,5 +1,5 @@
 /**
- * 
+ *
  */
 package com.dt.invocing.business;
 
@@ -16,10 +16,10 @@ import com.dt.invocing.model.ExchangeRates;
  */
 public interface CalculationService {
 
-	public BigDecimal calculateTotal(ExchangeRates excahngeRates,
-			Customer customer, CurrencyType targetCurrency);
+    public BigDecimal calculateTotal(ExchangeRates excahngeRates,
+            Customer customer, CurrencyType targetCurrency);
 
-	public BigDecimal calculateTotal(ExchangeRates excahngeRates,
-			List<Customer> customers, CurrencyType targetCurrency);
+    public BigDecimal calculateTotal(ExchangeRates excahngeRates,
+            List<Customer> customers, CurrencyType targetCurrency);
 
 }

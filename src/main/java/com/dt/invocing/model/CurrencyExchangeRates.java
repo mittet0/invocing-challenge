@@ -1,5 +1,5 @@
 /**
- * 
+ *
  */
 package com.dt.invocing.model;
 
@@ -11,18 +11,19 @@ import java.util.Map;
  */
 public class CurrencyExchangeRates implements ExchangeRates {
 
-	private Map<CurrencyType, Double> curencyRates;
+    private Map<CurrencyType, Double> curencyRates;
 
-	public Map<CurrencyType, Double> getCurrencyRates() {
-		return curencyRates;
-	}
+    @Override
+    public Map<CurrencyType, Double> getCurrencyRates() {
+        return curencyRates;
+    }
 
-	/**
-	 * @param defailtCurrency
-	 * @param curencyRates
-	 */
-	public CurrencyExchangeRates(Map<CurrencyType, Double> curencyRates) {
-		super();
-		this.curencyRates = curencyRates;
-	}
+    /**
+     * @param defailtCurrency
+     * @param curencyRates
+     */
+    public CurrencyExchangeRates(Map<CurrencyType, Double> curencyRates) {
+        super();
+        this.curencyRates = curencyRates;
+    }
 }
