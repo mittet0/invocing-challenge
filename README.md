@@ -25,7 +25,7 @@ java -jar target/invocing-0.0.1-SNAPSHOT.jar com.dt.invocing.InvoicingApplicatio
 
 
 ```
-curl -vvv -F 'exchangeRates={"EUR": "1.0", "USD": "1.11", "GBP": "0.76"};type=application/json' -F 'targetCurrency="\"GBP\"";type=application/json' -F 'document=@data.csv' http://localhost:8089/sum
+curl -vvv -F 'exchangeRates={"EUR": "1.0", "USD": "1.11", "GBP": "0.76"};type=application/json' -F 'targetCurrency="\"GBP\"";type=application/json' -F 'document=@./src/test/resources/data.csv' http://localhost:8089/sum
 ```
 
 ## Build the application
