@@ -16,10 +16,16 @@ To start the application on default port 8089:
 ./mvnw spring-boot:run
 ```
 
-## Send requests to application
+or build the application from source and then exeute:
 
 ```
-curl -vvv -F 'exchangeRates={"EUR": "1.0", "USD": "1.11", "GBP": "0.76"};type=application/json' -F 'targetCurrency="USD";type=application/json' -F 'document=@your-data-file' http://localhost:<port>/sum
+java -jar target/invocing-0.0.1-SNAPSHOT.jar com.dt.invocing.InvoicingApplication
+```
+## Send requests to application
+
+
+```
+curl -vvv -F 'exchangeRates={"EUR": "1.0", "USD": "1.11", "GBP": "0.76"};type=application/json' -F 'targetCurrency="\"GBP\"";type=application/json' -F 'document=@data.csv' http://localhost:8089/sum
 ```
 
 ## Build the application
